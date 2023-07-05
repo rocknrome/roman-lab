@@ -1,0 +1,655 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+a {
+    color: #151515;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: #40DEDE;
+}
+
+section {
+    padding: 4rem 0rem;
+    position: relative;
+}
+
+/*----------BUTTON-CSS ----------*/
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #fff;
+    border: solid 2px #151515;
+    color: #151515;
+}
+
+.btn-primary:hover {
+    background: #000;
+    color: #40DEDE;
+    border: solid 2px #151515;
+}
+
+.btn-white {
+    background: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+}
+
+.btn-white:hover {
+    background: #fff;
+    border: solid 2px #fff;
+    color: #40DEDE;
+}
+
+/*----------BUTTON-CSS ----------*/
+
+
+/*---------BACK-TO-TOP---------*/
+
+#backtop {
+    position: fixed;
+    width: 45px;
+    background: #40DEDE;
+    height: 43px;
+    bottom: 35px;
+    right: 20px;
+    z-index: 999;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#backtop:hover {
+    cursor: pointer;
+    background-color: #2eb1b1;
+}
+
+#backtop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*--------- BACK-TO-TOP ---------*/
+
+
+/*------- SECTION-HEADING-CSS -----*/
+
+.section-header h2 {
+    font-size: 2.7rem;
+    color: #151515;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-header-white h2 {
+    color: #fff;
+}
+
+.section-header-white p{
+    color:#fff;
+
+}
+.section-header-white h4 {
+    color: #40DEDE;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0px;
+    font-weight: 400;
+}
+
+/*------- SECTION-HEADING-CSS -----*/
+
+/*============HEADER CSS==========*/
+
+header {
+    padding: 1.5rem 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 15%;
+}
+
+.header-logo img {
+    width: 4rem;
+}
+
+.header-menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.social-header a {
+    width: 38px;
+    margin-right: 18px;
+    display: inline-block;
+}
+
+.header-right {
+    width: 15%;
+}
+
+.header-lang ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-lang ul li {
+    position: relative;
+    width: 30px;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+.header-lang ul li:after {
+    position: absolute;
+    height: 83%;
+    background: #000;
+    content: "";
+    right: -8px;
+    width: 2px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.header-lang ul li:last-child {
+    margin: 0;
+}
+
+.header-lang ul li:last-child:after {
+    display: none;
+}
+
+.header-menu ul li {
+    margin: 0px 18px;
+}
+
+.header-menu ul li a {
+    font-size: 0.9em;
+    font-weight: 500;
+    position: relative;
+}
+
+/*============HEADER CSS==========*/
+
+
+/*============BANNER CSS==========*/
+
+.homebanner {
+    padding: 7rem 0px 2rem 0px;
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/banner-top.png), url(../images/banner-right.png);
+    background-size: 26.3%, 24%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top left, bottom -160% right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-content h1 {
+    font-size: 3.6rem;
+    margin: 0 0 1rem 0px;
+    font-weight: 600;
+}
+
+.banner-bottomsection {
+    text-align: center;
+    background: #151515;
+    padding: 0.9rem 0rem;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.inner-content p {
+    margin-bottom: 1.5rem;
+}
+
+.header-menu ul li a:hover {
+    color: #21c3c3;
+}
+
+.header-menu ul li a:after {
+    content: "";
+    left: 0;
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    background: #21c3c3;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+.header-menu ul li a:hover:after {
+    width: 100%;
+}
+
+/*============BANNER CSS==========*/
+
+
+/*============ABOUT CSS==========*/
+
+.aboutsec {
+    padding: 6rem 0;
+    background: url(../images/banner-right.png);
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: right top 260%;
+    background-attachment: fixed;
+}
+
+.about-item h6 {
+    margin: 0;
+    font-size: 20px;
+    margin-top: 0.8rem;
+    color: #151515;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.about-inner .about-item:after {
+    position: absolute;
+    width: 3px;
+    background: #000000;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    width: 18%;
+    padding: 40px 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.about-item img {
+    width: 50px;
+}
+
+.about-item:hover:after {
+    width: 100%;
+}
+
+.about-item:hover h6 {
+    color: #fff;
+}
+
+.about-icon {
+    position: relative;
+    height: 50px;
+}
+
+.about-icon img {
+    position: absolute;
+}
+
+.about-item:hover .onhover {
+    display: block;
+}
+
+.about-item .onhover {
+    display: none;
+}
+
+/*============ABOUT CSS==========*/
+
+
+/*============OUT PRODUCTS CSS==========*/
+
+.ourproduct-section {
+    background: url(../images/projects-bg.png) no-repeat;
+    background-size: 24%;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+.our-item img {
+    max-width: 230px;
+    margin: auto;
+}
+
+.get-item p {
+    padding-right: 8rem;
+    font-size: 1.1rem;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.get-item ul li {
+    font-size: 1.3rem;
+    margin: 0.8rem 0px;
+}
+
+/*============OUT PRODUCTS CSS==========*/
+
+/*============INTRODUCING  CSS==========*/
+
+.introducing-section {
+    padding: 6rem 0px;
+    background: url(../images/introducing-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile-img {
+    max-width: 255px;
+    border: solid 2px #fff;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.introducing-inner {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.intro-items {
+    padding-right: 4rem;
+}
+
+.intro-items p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ourproduct-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.ourproduct-item {
+    background: black;
+    width: 31.333%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 77px;
+    border-radius: 9px;
+}
+
+/*=========== INTRODUCING-CSS ==========*/
+
+/*=========== GET-SECTION-CSS ==========*/
+.getsection {
+    background: url(../images/getsection-bg.png);
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position: left bottom;
+    background-attachment: fixed;
+}
+
+/*=========== GET-SECTION-CSS ==========*/
+
+
+/*============ CONTACT-CSS ==========*/
+.contactsection {
+    background: #000;
+    padding: 7rem 0px;
+}
+
+.contactsection .section-header,
+ .contactsection .section-header h2 {
+    margin-bottom: 0px;
+}
+.addresslink ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.addresslink ul li a:hover {
+    color: #40DEDE;
+}
+
+.addresslink ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addresslink ul li {
+    margin: 10px 20px;
+}
+.addresslink ul li a i {
+    font-size: 20px;
+    margin-right: 11px;
+    color: #40DEDE;
+}
+
+.addresslink {
+    margin-bottom: 40px;
+}
+
+/*============CONTACT-CSS==========*/
+
+
+.mobilemenu {
+    display: none;
+}
+
+
+/*---------------- RESPONSIVE CSS ----------------- */
+
+@media(max-width:991px) {
+    .about-item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .profile-img {
+        margin-top: 40px;
+    }
+
+    .introducing-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro-items,
+    .get-item p {
+        padding-right: 0rem;
+    }
+
+    .ourproduct-item {
+        width: 48%;
+    }
+}
+
+@media(max-width:800px) {
+    .ourproduct-item {
+        width: 100%;
+    }
+
+    html {
+        font-size: 90%;
+    }
+}
+
+
+@media(max-width:767px) {
+    .mobilemenu {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-right {
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+
+    /*MOBILE MENU*/
+
+    #sidebar .mobilelist {
+        background: #151718;
+        width: 300px;
+        height: 100vh;
+        display: block;
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        transition: 0.8s;
+        padding: 65px 20px;
+    }
+
+    .mobilelist ul li a {
+        color: #fff;
+        margin-bottom: 13px;
+        display: block;
+        font-size: 14px;
+
+    }
+
+    body.visible {
+        overflow: hidden;
+    }
+
+    .visible #sidebar .mobilelist {
+        right: 0px;
+    }
+
+    #sidebar-btn {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 16px;
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+
+    .header-lang {
+        margin-right: 18px;
+    }
+
+    .visible .mobilemenu #sidebar-btn span {
+        background: #fff;
+    }
+
+    #sidebar-btn span {
+        height: 2px;
+        background: #000;
+        margin-bottom: 6px;
+        display: block;
+        position: relative;
+    }
+
+    #sidebar-btn span:nth-child(2) {
+        width: 75%;
+    }
+
+    #sidebar-btn span:nth-child(3) {
+        width: 50%;
+    }
+
+    .visible #sidebar-btn span:nth-child(2) {
+        visibility: hidden;
+    }
+
+    .visible #sidebar-btn span:nth-child(3) {
+        margin: 0;
+        transform: rotate(45deg);
+        width: 100%;
+        top: -16px;
+    }
+
+    .visible #sidebar-btn span {
+        transform: rotate(-45deg);
+    }
+}
+
+/*MOBILE MENU*/
+
+
+@media(max-width:576px) {
+    .about-item {
+        width: 100%;
+    }
+     html {
+        font-size: 65%;
+    }
+}
