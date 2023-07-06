@@ -163,7 +163,7 @@ header {
 .header-menu {
     width: 60%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 .social-header a {
@@ -398,7 +398,7 @@ header {
 
 /*============INTRODUCTION  CSS==========*/
 
-.introducing-section {
+.introduction-section {
     padding: 6rem 0px;
     background: url(../images/introducing-bg.jpg);
     background-size: cover;
@@ -412,7 +412,7 @@ header {
     margin: auto;
 }
 
-.introducing-inner {
+.introduction-inner {
     display: flex;
     flex-wrap: wrap;
     color: #fff;
@@ -474,29 +474,29 @@ header {
     display: flex;
     align-items: center;
     transition: 0.5s;
-}
-.addresslink ul li a:hover {
-    color: #40DEDE;
-}
+    font-size: 0; /* Hide the text */
+  }
 
-.addresslink ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.addresslink ul li {
-    margin: 10px 20px;
-}
-.addresslink ul li a i {
+  .addresslink ul li a i {
     font-size: 20px;
     margin-right: 11px;
     color: #40DEDE;
-}
+  }
 
-.addresslink {
+  .addresslink ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addresslink ul li {
+    margin: 10px 20px;
+  }
+
+  .addresslink {
     margin-bottom: 40px;
-}
+  }
+
 
 /*============CONTACT-CSS==========*/
 
@@ -518,7 +518,7 @@ header {
         margin-top: 40px;
     }
 
-    .introducing-inner {
+    .introduction-inner {
         justify-content: center;
         text-align: center;
     }
@@ -562,90 +562,89 @@ header {
     }
 
 
-    /*MOBILE MENU*/
+    /* MOBILE MENU */
 
-    #sidebar .mobilelist {
-        background: #151718;
-        width: 300px;
-        height: 100vh;
-        display: block;
-        position: fixed;
-        right: -100%;
-        top: 0px;
-        transition: 0.8s;
-        padding: 65px 20px;
-    }
-
-    .mobilelist ul li a {
-        color: #fff;
-        margin-bottom: 13px;
-        display: block;
-        font-size: 14px;
-
-    }
-
-    body.visible {
-        overflow: hidden;
-    }
-
-    .visible #sidebar .mobilelist {
-        right: 0px;
-    }
-
-    #sidebar-btn {
-        display: inline-block;
-        vertical-align: middle;
-        width: 24px;
-        height: 16px;
-        cursor: pointer;
-        margin: 0;
-        position: relative;
-        top: 0;
-        right: 0;
-        z-index: 9;
-    }
-
-    .header-lang {
-        margin-right: 18px;
-    }
-
-    .visible .mobilemenu #sidebar-btn span {
-        background: #fff;
-    }
-
-    #sidebar-btn span {
-        height: 2px;
-        background: #000;
-        margin-bottom: 6px;
-        display: block;
-        position: relative;
-    }
-
-    #sidebar-btn span:nth-child(2) {
-        width: 75%;
-    }
-
-    #sidebar-btn span:nth-child(3) {
-        width: 50%;
-    }
-
-    .visible #sidebar-btn span:nth-child(2) {
-        visibility: hidden;
-    }
-
-    .visible #sidebar-btn span:nth-child(3) {
-        margin: 0;
-        transform: rotate(45deg);
-        width: 100%;
-        top: -16px;
-    }
-
-    .visible #sidebar-btn span {
-        transform: rotate(-45deg);
-    }
-}
-
-/*MOBILE MENU*/
+#sidebar .mobilelist {
+    background: #151718;
+    width: 300px;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 0px;
+    transition: 0.8s;
+    padding: 65px 20px;
+  }
+  
+  .mobilelist ul li a {
+    color: #fff;
+    margin-bottom: 13px;
+    display: block;
+    font-size: 14px;
+  }
+  
+  body.visible {
+    overflow: hidden;
+  }
+  
+  .visible #sidebar .mobilelist {
+    right: 0px;
+  }
+  
+  #sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 9;
+  }
+  
+  .header-lang {
+    margin-right: 18px;
+  }
+  
+  .visible .mobilemenu #sidebar-btn span {
+    background: #fff;
+  }
+  
+  #sidebar-btn span {
+    height: 2px;
+    background: #000;
+    margin-bottom: 6px;
+    display: block;
+    position: relative;
+  }
+  
+  #sidebar-btn span:nth-child(2) {
+    width: 75%;
+  }
+  
+  #sidebar-btn span:nth-child(3) {
+    width: 50%;
+  }
+  
+  .visible #sidebar-btn span:nth-child(2) {
+    visibility: hidden;
+  }
+  
+  .visible #sidebar-btn span:nth-child(3) {
+    margin: 0;
+    transform: rotate(45deg);
+    width: 100%;
+    top: -16px;
+  }
+  
+  .visible #sidebar-btn span {
+    transform: rotate(-45deg);
+  }
+  
+  /* MOBILE MENU */
+  
 
 
 @media(max-width:576px) {
