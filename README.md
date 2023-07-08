@@ -2,9 +2,9 @@
 
 A Resume - Showcase single page website from a mockup to introduce myself to a potential client and showcase my completed projects and work. 
 
+Website's link: https://rocknrome.github.io/roman-lab/
 
 The mockup link: https://xd.adobe.com/view/65e63407-ea19-4624-9c85-fccbfd94e4f3-30b5/
-
 
 The website consists of HTML/CSS/JS code and using JQuery library for added UX. 
 
