@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   AOS.init();
 
-  var btn = $('#backtop');
+  let btn = $('#backtop');
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
